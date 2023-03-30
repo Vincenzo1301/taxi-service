@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #293241;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hm.network.group12.totaltrackingtaxitoolfrontend.controller.ButtonEventHandlerController">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#fefffe" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Separator prefWidth="200.0">
+               <padding>
+                  <Insets bottom="10.0" top="20.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Separator>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Text fill="#fefffe" strokeType="OUTSIDE" strokeWidth="0.0" text="Rides">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="40.0">
+               <children>
+                  <Text fill="#fefffe" strokeType="OUTSIDE" strokeWidth="0.0" text="Origin" />
+                  <TextField fx:id="textFieldOrigin" style="-fx-border-radius: 5;" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="12.0">
+               <children>
+                  <Text fill="#fefffe" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination" />
+                  <TextField fx:id="textFieldDestination" style="-fx-border-radius: 5;" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="createRideButton" mnemonicParsing="false" onAction="#createRide" style="-fx-background-color: #04A777;" text="Save" textFill="#fefffe" />
+                  <Button fx:id="cancelRideButton" mnemonicParsing="false" onAction="#cancelRide" style="-fx-background-color: #EF476F;" text="Cancel" textFill="#fefffe" />
+                  <Button fx:id="updateRideButton" mnemonicParsing="false" onAction="#updateRide" style="-fx-background-color: #FFC53A;" text="Update" textFill="#fefffe" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <padding>
+                  <Insets bottom="10.0" top="20.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Separator>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Text fill="#fefffe" strokeType="OUTSIDE" strokeWidth="0.0" text="Availability">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Text fill="#fefffe" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you available?" />
+                  <CheckBox fx:id="checkBox" mnemonicParsing="false" text="CheckBox" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Button fx:id="updateAvailabilityButton" mnemonicParsing="false" onAction="#updateAvailability" style="-fx-background-color: #04A777;" text="Save" textFill="#fefffe" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#fefffe" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose taxi" />
+            <ChoiceBox fx:id="choiceBox" prefWidth="150.0" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

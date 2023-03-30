@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "90c63732-2b61-4d1f-b27e-1d8cdd45d3b1",
+		"name": "Beleuchtungssteuerung",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17257932"
+	},
+	"item": [
+		{
+			"name": "Hue Emulator",
+			"item": [
+				{
+					"name": "Set light state",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"on\": true}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/newdeveloper/lights/1/state",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"newdeveloper",
+								"lights",
+								"1",
+								"state"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

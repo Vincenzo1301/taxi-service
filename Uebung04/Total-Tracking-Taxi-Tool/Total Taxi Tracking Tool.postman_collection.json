@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "3c1057a8-9e75-42c0-9ee6-d41260a2ff35",
+		"name": "Total Taxi Tracking Tool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17257932"
+	},
+	"item": [
+		{
+			"name": "Create taxi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"taxiNumber\": 1,\r\n    \"destination\": \"Arno-Assmann-Straße 7\",\r\n    \"origin\": \"Arno-Assmann-Straße 9\",\r\n    \"duration\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/taxi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"taxi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create trip",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"taxiNumber\": 1,\r\n    \"origin\": \"Arno-Assmann-Straße 7\",\r\n    \"destination\": \"Carl-Baierl-Bogen\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/taxi/trip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"taxi",
+						"trip"
+					],
+					"query": [
+						{
+							"key": "taxiNumber",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read all taxis",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update taxi availability",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/taxi/:taxiNumber/:available",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"taxi",
+						":taxiNumber",
+						":available"
+					],
+					"variable": [
+						{
+							"key": "taxiNumber",
+							"value": "1"
+						},
+						{
+							"key": "available",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update trip",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"taxiNumber\": 1,\r\n    \"destination\": \"Arno-Assmann-Straße 7\",\r\n    \"origin\": \"Arno-Assmann-Straße 9\",\r\n    \"duration\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/taxi/update/trip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"taxi",
+						"update",
+						"trip"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
