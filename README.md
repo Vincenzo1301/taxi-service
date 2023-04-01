@@ -2,7 +2,7 @@
 
 ## Gruppe
 Nummer: 12 <br />
-Mitglieder: Vincenzo Auricchio und Tim Kammerlocher
+Mitglieder: Vincenzo Auricchio und Jonas Wittmann
 
 ## Aufgabe 4.2: Beleuchtungssteuerung
 
