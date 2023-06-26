@@ -93,4 +93,6 @@ Als zusätzliche Möglichkeit unsere API anzusprechen, findet sich im Total-Trac
 ## Lizenz
 Die gesamte Aufgabe entstammt aus der Vorlesung Netzwerke I an der Hochschule München aus dem Wintersemester 2022/23. Die Ersteller der Aufgaben sind Herr Prof. Dr. L. Wischhof und Prof. Dr. A. Zugenmaier an der Fakultät 07.
 
+Ich (Vincenzo Auricchio) und Tim Kammerlocher sind nur die Bearbeiter der gestellten Aufgabe.
+
 
