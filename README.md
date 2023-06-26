@@ -18,7 +18,7 @@ Um die Software zu starten bzw. weiterzuentwicklen werden die folgenden Technolo
 - Maven
 
 ### Philips Hue Lampen
-Die Lampen stehen physikalisch in den Laboren der *** und können über die Philips Hue API angesprochen werden. Mit dieser wird auf einen Webservice zugegriffen, der von der Hue-Bridge zur Verfügung gestellt wird. Die Bridge steuert dann wiederum die Lampen über eine drahtlose Zigbee-Verbindung, ein typischer Ansatz aus dem Bereich Internet-of-Things (IoT). Für weitere Information siehe Angabe.
+Die Lampen stehen physikalisch in den Laboren der Hochschule München und können über die Philips Hue API angesprochen werden. Mit dieser wird auf einen Webservice zugegriffen, der von der Hue-Bridge zur Verfügung gestellt wird. Die Bridge steuert dann wiederum die Lampen über eine drahtlose Zigbee-Verbindung, ein typischer Ansatz aus dem Bereich Internet-of-Things (IoT). Für weitere Information siehe Angabe.
 
 ### Architektur
 
