@@ -1,7 +1,7 @@
 # Übung 4: Webservices mit REST
 
 ## Gruppe
-Mitglieder: Vincenzo Auricchio und Jonas Wittman
+Mitglieder: Vincenzo Auricchio und Tim Kammerlocher
 
 ## Inhalt
 - Aufgabe 4.2 Beleuchtungssteuerung
